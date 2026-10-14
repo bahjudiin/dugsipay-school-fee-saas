@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# env files (never commit secrets)
+.env
+.env*.local
+
+# local DB backups / checkpoints
+/backups/
+
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+.neon
+
+.vercel

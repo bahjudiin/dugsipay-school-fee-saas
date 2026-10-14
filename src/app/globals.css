@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* ============================================================
+   DuqsiPay design system — Apple design language (see DESIGN.md)
+   SF typography, Action Blue, hairline chrome, pill buttons,
+   parchment canvas. Teal stays as the semantic (success/WA) accent.
+   ============================================================ */
+@theme {
+  --font-sans:
+    "SF Pro Text", -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Apple Action Blue — interactive primary (DESIGN.md) */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0efff;
+  --color-primary-200: #bcdcff;
+  --color-primary-300: #8cc4ff;
+  --color-primary-400: #2997ff;
+  --color-primary-500: #0071e3;
+  --color-primary-600: #0066cc;
+  --color-primary-700: #0057b3;
+  --color-primary-800: #1d3557; /* DuqsiPay deep blue — brand surfaces */
+  --color-primary-900: #17283f;
+  --color-primary-950: #101c2e;
+
+  /* Apple neutral grays mapped onto slate (global surface shift) */
+  --color-slate-50: #fbfbfd;
+  --color-slate-100: #f5f5f7;
+  --color-slate-200: #e8e8ed;
+  --color-slate-300: #d2d2d7;
+  --color-slate-400: #86868b;
+  --color-slate-500: #6e6e73;
+  --color-slate-600: #494950;
+  --color-slate-700: #333336;
+  --color-slate-800: #26262b;
+  --color-slate-900: #1d1d1f;
+  --color-slate-950: #111113;
+
+  /* Teal — semantic accent (WhatsApp / success / receipts) */
+  --color-aqua-50: #e7faf8;
+  --color-aqua-100: #c8f4f0;
+  --color-aqua-200: #96e9e2;
+  --color-aqua-300: #5edad1;
+  --color-aqua-400: #3ccbc0;
+  --color-aqua-500: #2ec4b6;
+  --color-aqua-600: #25a79b;
+  --color-aqua-700: #1d857c;
+  --color-aqua-800: #176763;
+  --color-aqua-900: #124f4c;
+
+  /* Red — only where meaningful */
+  --color-danger-50: #fdecee;
+  --color-danger-100: #fad5d9;
+  --color-danger-500: #e63946;
+  --color-danger-600: #c92e3b;
+  --color-danger-700: #a62530;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #f5f5f7; /* Apple parchment */
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.025em;
+}
+
+::selection {
+  background: var(--color-primary-100);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d2d2d7 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 8px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fadeUp 0.25s ease-out both;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes toastOut {
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+.toast-enter {
+  animation: toastIn 0.22s cubic-bezier(0.21, 1.02, 0.73, 1) both;
+}
+.toast-exit {
+  animation: toastOut 0.18s ease-in both;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.skeleton {
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #e8e8ed 25%, #f5f5f7 37%, #e8e8ed 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
