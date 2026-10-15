@@ -3,6 +3,7 @@ import { asc, eq, gte, sql } from "drizzle-orm";
 import { ArrowRight, GraduationCap } from "lucide-react";
 import { db } from "@/db";
 import { classes, payments, students } from "@/db/schema";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { getSettings } from "@/lib/settings";
 import ClassesManager from "@/components/ClassesManager";
 import { Badge, Card, EmptyState, PageHeader } from "@/components/ui";
@@ -11,6 +12,7 @@ import { money, monthLabel, currentYearMonth } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export default async function ClassesPage() {
+  await ensureDemoSampleData();
   const settings = await getSettings();
   const monthStart = new Date();
   monthStart.setDate(1);

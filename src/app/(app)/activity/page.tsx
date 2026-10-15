@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { db } from "@/db";
 import { activityLog } from "@/db/schema";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { Badge, Card, EmptyState, PageHeader, cn } from "@/components/ui";
 import { formatDateTime, timeAgo } from "@/lib/format";
 
@@ -46,6 +47,7 @@ export default async function ActivityPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
+  await ensureDemoSampleData();
   const group = typeof sp.group === "string" ? sp.group : "";
 
   const all = await db.select().from(activityLog).orderBy(desc(activityLog.createdAt)).limit(300);

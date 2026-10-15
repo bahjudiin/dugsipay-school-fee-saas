@@ -3,6 +3,7 @@ import { and, desc, eq, ilike, or, sql, type SQL } from "drizzle-orm";
 import { Filter, Plus, Trash2 } from "lucide-react";
 import { db } from "@/db";
 import { payments } from "@/db/schema";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { getSettings } from "@/lib/settings";
 import PaymentForm from "@/components/PaymentForm";
 import ConfirmAction from "@/components/ConfirmAction";
@@ -18,6 +19,7 @@ export default async function PaymentsPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
+  await ensureDemoSampleData();
   const settings = await getSettings();
   const month = typeof sp.month === "string" ? sp.month : "";
   const method = typeof sp.method === "string" ? sp.method : "";

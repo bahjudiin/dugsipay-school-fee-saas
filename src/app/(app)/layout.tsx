@@ -2,6 +2,7 @@ import Link from "next/link";
 import { LogIn, UserPlus } from "lucide-react";
 import AppShell from "@/components/AppShell";
 import { getAuthUser } from "@/lib/auth";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { getSettings } from "@/lib/settings";
 
 export const dynamic = "force-dynamic";
@@ -11,6 +12,8 @@ export default async function AppLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const user = await getAuthUser();
   const settings = await getSettings();
+  // Anonymous demo visitors always land on a school with sample students.
+  await ensureDemoSampleData();
 
   return (
     <AppShell

@@ -3,6 +3,7 @@ import { and, asc, eq, ilike, or, sql, type SQL } from "drizzle-orm";
 import { ChevronLeft, ChevronRight, ChevronRight as GoIcon, GraduationCap,  Plus } from "lucide-react";
 import { db } from "@/db";
 import { classes, payments, students } from "@/db/schema";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { getSettings } from "@/lib/settings";
 import StudentsFilterBar from "@/components/StudentsFilterBar";
 import StudentRowActions from "@/components/StudentRowActions";
@@ -21,6 +22,7 @@ export default async function StudentsPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
+  await ensureDemoSampleData();
   const settings = await getSettings();
   const q = (typeof sp.q === "string" ? sp.q : "").trim();
   const classId = typeof sp.classId === "string" && sp.classId ? Number(sp.classId) : null;

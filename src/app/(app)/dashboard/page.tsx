@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { db } from "@/db";
 import { activityLog, classes, payments, students } from "@/db/schema";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { getSettings } from "@/lib/settings";
 import { Badge, Card, EmptyState, PageHeader, Stat, btnPrimary, btnSecondary, cn } from "@/components/ui";
 import { formatDate, money, monthLabel, monthsElapsed, currentYearMonth, timeAgo } from "@/lib/format";
@@ -18,6 +19,7 @@ import { t } from "@/lib/i18n";
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
+  await ensureDemoSampleData();
   const settings = await getSettings();
   const cur = settings.currency;
   const monthStart = new Date();

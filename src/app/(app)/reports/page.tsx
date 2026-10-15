@@ -3,6 +3,7 @@ import { and, asc, eq, gte, lt, sql } from "drizzle-orm";
 import { CalendarRange, ChartColumn,  TrendingUp, Users, Wallet } from "lucide-react";
 import { db } from "@/db";
 import { classes, payments, students } from "@/db/schema";
+import { ensureDemoSampleData } from "@/lib/demo-seed";
 import { getSettings } from "@/lib/settings";
 import { Badge, Card, EmptyState, PageHeader, cn, inputCls } from "@/components/ui";
 import ContactMenu from "@/components/ContactMenu";
@@ -18,6 +19,7 @@ export default async function ReportsPage({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
+  await ensureDemoSampleData();
   const settings = await getSettings();
   const cur = settings.currency;
 
