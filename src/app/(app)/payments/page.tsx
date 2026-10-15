@@ -131,7 +131,7 @@ export default async function PaymentsPage({
                           body={`This removes the ${money(p.amount, settings.currency)} payment recorded for ${p.studentName}. The deletion is logged in Activity.`}
                           confirmLabel="Delete payment"
                           successMessage="Payment deleted (logged)"
-                          action={async () => deletePayment(p.id)}
+                          action={deletePayment.bind(null, p.id)}
                           trigger={
                             <button
                               type="button"
@@ -191,7 +191,7 @@ export default async function PaymentsPage({
                                 title={`Delete ${p.receiptNo}?`}
                                 body={`This removes the ${money(p.amount, settings.currency)} payment recorded for ${p.studentName}. The deletion is logged in Activity.`}
                                 confirmLabel="Delete payment"
-                                action={async () => deletePayment(p.id)}
+                                action={deletePayment.bind(null, p.id)}
                                 trigger={
                                   <button
                                     type="button"
