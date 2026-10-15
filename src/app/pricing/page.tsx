@@ -5,7 +5,7 @@ import PricingSection, { SalesQuickLinks } from "@/components/marketing/PricingS
 export const metadata = {
   title: "Pricing",
   description:
-    "DuqsiPay pricing: $15/month, $150/year, or a $299 lifetime license — plus a one-time setup fee. Activate over WhatsApp.",
+    "DugsiPAY pricing: $15/month, $150/year, or a $299 lifetime license — plus a one-time setup fee. Activate over WhatsApp.",
 };
 
 export default function PricingPage() {

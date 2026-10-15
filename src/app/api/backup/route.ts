@@ -21,7 +21,7 @@ export async function GET() {
     ]);
 
     const payload = {
-      app: "DuqsiPay",
+      app: "DugsiPAY",
       version: 1,
       exportedAt: new Date().toISOString(),
       tables: {
@@ -37,7 +37,7 @@ export async function GET() {
     return new Response(JSON.stringify(payload, null, 2), {
       headers: {
         "Content-Type": "application/json; charset=utf-8",
-        "Content-Disposition": `attachment; filename="duqsipay-backup-${stamp}.json"`,
+        "Content-Disposition": `attachment; filename="dugsipay-backup-${stamp}.json"`,
       },
     });
   } catch (err) {

@@ -1,6 +1,6 @@
 /**
  * ============================================================
- *  DuqsiPay PRICING & SALES CONFIG — the ONLY file to edit
+ *  DugsiPAY PRICING & SALES CONFIG — the ONLY file to edit
  *  when prices, plans or the sales contact change.
  * ============================================================
  * Prices are in USD. `price` is the RECURRING subscription fee
@@ -83,7 +83,7 @@ export const SETUP_INCLUDES: string[] = [
 
 /** Mandatory honesty note for the lifetime plan. */
 export const LIFETIME_DISCLAIMER =
-  "“Lifetime” means a perpetual software usage license for the DuqsiPay application. " +
+  "“Lifetime” means a perpetual software usage license for the DugsiPAY application. " +
   "It does NOT include free lifetime hosting, maintenance, backups or unlimited support — " +
   "after the first year those continue as an optional annual service, so your school keeps " +
   "a fast, backed-up, up-to-date system.";
@@ -95,7 +95,7 @@ export function planById(id: string | null | undefined): Plan {
 /** Message sent to sales when a school picks a plan. */
 export function planInquiryMessage(plan: Plan, schoolName?: string): string {
   return [
-    `Salaam! I'd like to subscribe to DuqsiPay.`,
+    `Salaam! I'd like to subscribe to DugsiPAY.`,
     ``,
     `Plan: ${plan.name} — $${plan.price}${plan.interval}`,
     `One-time setup: $${plan.setupFee}`,

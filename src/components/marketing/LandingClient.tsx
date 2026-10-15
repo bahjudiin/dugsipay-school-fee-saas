@@ -456,7 +456,7 @@ export default function LandingClient() {
               {c.finalCta.cta} <ArrowRight className="size-4" />
             </Link>
             <a
-              href="https://api.whatsapp.com/send?phone=252617673669&type=phone_number&app_absent=0&text=Salaam!%20I%27d%20like%20to%20know%20more%20about%20DuqsiPay."
+              href="https://api.whatsapp.com/send?phone=252617673669&type=phone_number&app_absent=0&text=Salaam!%20I%27d%20like%20to%20know%20more%20about%20DugsiPAY."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -524,7 +524,7 @@ export default function LandingClient() {
                   <GraduationCap className="size-4" />
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-slate-950">DuqsiPay</p>
+                  <p className="text-sm font-bold text-slate-950">DugsiPAY</p>
                   <p className="text-[11px] text-slate-400">{c.footer.tagline}</p>
                 </div>
               </div>
@@ -534,7 +534,7 @@ export default function LandingClient() {
               const FOOTER_HREFS = [
                 ["/dashboard", "#features", "/pricing", "/demo"],
                 ["/#pain", "/login", "/signup", "/pricing"],
-                ["https://api.whatsapp.com/send?phone=252617673669&type=phone_number&app_absent=0&text=Salaam!%20I%27d%20like%20to%20know%20more%20about%20DuqsiPay.", "/#signup", "/#faq", "/dashboard"],
+                ["https://api.whatsapp.com/send?phone=252617673669&type=phone_number&app_absent=0&text=Salaam!%20I%27d%20like%20to%20know%20more%20about%20DugsiPAY.", "/#signup", "/#faq", "/dashboard"],
               ];
               return (
                 <div key={col.title}>
@@ -574,7 +574,7 @@ export default function LandingClient() {
                 <a key={l} href="#faq" className="text-[11px] font-medium text-slate-400 transition hover:text-slate-600">{l}</a>
               ))}
               <a
-                href="https://api.whatsapp.com/send?phone=252617673669&type=phone_number&app_absent=0&text=Salaam!%20I%27d%20like%20to%20know%20more%20about%20DuqsiPay."
+                href="https://api.whatsapp.com/send?phone=252617673669&type=phone_number&app_absent=0&text=Salaam!%20I%27d%20like%20to%20know%20more%20about%20DugsiPAY."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-full bg-green-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-600"

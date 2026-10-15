@@ -55,7 +55,7 @@ export function SignupFormAuth() {
   const router = useRouter();
   useEffect(() => {
     if (state.ok) {
-      toast({ title: "Workspace created", description: "Welcome to DuqsiPay." });
+      toast({ title: "Workspace created", description: "Welcome to DugsiPAY." });
       router.replace("/dashboard");
       router.refresh();
     }

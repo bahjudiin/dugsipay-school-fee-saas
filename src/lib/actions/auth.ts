@@ -102,8 +102,8 @@ export async function requestPasswordReset(
         body: JSON.stringify({
           from,
           to: email,
-          subject: "Reset your DuqsiPay password",
-          html: `<p>Salaam ${user.name || ""},</p><p>Click to reset your DuqsiPay password (valid 30 minutes):</p><p><a href="${appUrl}${resetPath}">Reset password</a></p><p>If you didn't request this, ignore this email.</p>`,
+          subject: "Reset your DugsiPAY password",
+          html: `<p>Salaam ${user.name || ""},</p><p>Click to reset your DugsiPAY password (valid 30 minutes):</p><p><a href="${appUrl}${resetPath}">Reset password</a></p><p>If you didn't request this, ignore this email.</p>`,
         }),
       });
       if (!res.ok) console.error("Resend failed:", await res.text());

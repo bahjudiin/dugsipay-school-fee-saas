@@ -1,6 +1,6 @@
 {
-  "name": "DuqsiPay — School Fee Management",
-  "short_name": "DuqsiPay",
+  "name": "DugsiPAY — School Fee Management",
+  "short_name": "DugsiPAY",
   "description": "School fees, finally clear. Students, payments, receipts and WhatsApp reminders for Somali schools.",
   "start_url": "/dashboard",
   "scope": "/",

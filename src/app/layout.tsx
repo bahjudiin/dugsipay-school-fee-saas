@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s · DugsiPAY",
   },
   description:
-    "Stop chasing school fees in notebooks. DuqsiPay tracks students, payments, receipts and WhatsApp/SMS fee reminders for Somali schools — from $15/month.",
+    "Stop chasing school fees in notebooks. DugsiPAY tracks students, payments, receipts and WhatsApp/SMS fee reminders for Somali schools — from $15/month.",
   manifest: "/manifest.webmanifest",
   icons: { icon: [{ url: "/icon.svg", type: "image/svg+xml" }] },
 };

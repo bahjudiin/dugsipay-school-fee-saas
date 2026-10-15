@@ -1,4 +1,4 @@
-/* DuqsiPay service worker — offline-first shell.
+/* DugsiPAY service worker — offline-first shell.
    Static assets: cache-first. Navigations: network-first with
    offline fallback to the last cached visit (or /offline).
    API routes & server actions are NEVER cached. */

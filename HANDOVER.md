@@ -1,4 +1,4 @@
-# DuqsiPay — Handover Guide (for the next developer / opencode)
+# DugsiPAY — Handover Guide (for the next developer / opencode)
 
 Everything needed to pick this up with zero context. Read `README.md` first,
 then this file for the internal map.

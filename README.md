@@ -1,4 +1,4 @@
-# DuqsiPay — School Fee Management
+# DugsiPAY — School Fee Management
 
 A fast, minimal school fee management app for Somali schools: students, classes,
 payments, receipts, WhatsApp/SMS fee reminders, reports, CSV import, activity log

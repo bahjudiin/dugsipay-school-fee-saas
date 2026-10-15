@@ -363,7 +363,7 @@ export const DashboardDesktopSnapshot = () => {
         <span className="size-2.5 rounded-full bg-[#ff5f57]" />
         <span className="size-2.5 rounded-full bg-[#febc2e]" />
         <span className="size-2.5 rounded-full bg-[#28c840]" />
-        <span className="ml-3 flex-1 rounded-md bg-white px-3 py-1 text-[10px] text-slate-400">app.duqsipay.com/dashboard</span>
+        <span className="ml-3 flex-1 rounded-md bg-white px-3 py-1 text-[10px] text-slate-400">app.dugsipay.com/dashboard</span>
       </div>
       <div className="flex">
         {/* Sidebar */}
@@ -373,7 +373,7 @@ export const DashboardDesktopSnapshot = () => {
               <GraduationCap className="size-3.5" />
             </div>
             <div>
-              <p className="text-[11px] font-bold text-slate-900">DuqsiPay</p>
+              <p className="text-[11px] font-bold text-slate-900">DugsiPAY</p>
               <p className="text-[9px] text-slate-400">Nuurka Academy</p>
             </div>
           </div>

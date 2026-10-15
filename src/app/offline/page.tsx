@@ -12,7 +12,7 @@ export default function OfflinePage() {
       </div>
       <h1 className="mt-4 text-xl font-semibold tracking-tight text-slate-900">You’re offline</h1>
       <p className="mt-2 max-w-sm text-sm leading-relaxed text-slate-500">
-        DuqsiPay needs a connection to load new data. Pages you’ve already opened may still work —
+        DugsiPAY needs a connection to load new data. Pages you’ve already opened may still work —
         otherwise check your internet and try again. / Internet lama heysan — isku xir markale.
       </p>
       <Link

@@ -28,14 +28,14 @@ export const COPY: Record<
   en: {
     nav: {
       tagline: "School fees, finally clear.",
-      links: ["Why DuqsiPay", "Features", "Pricing", "FAQ"],
+      links: ["Why DugsiPAY", "Features", "Pricing", "FAQ"],
       cta: "Get started",
-      menuTitle: "Menu — DuqsiPay",
+      menuTitle: "Menu — DugsiPAY",
     },
     hero: {
       eyebrow: "Built for Somali schools · Somali + English",
       title: "Know who paid. Know who owes. In one tap.",
-      sub: "Every Monday you open a notebook, count cash, and call parents one by one. DuqsiPay ends that — 200 students, every payment, every reminder, on your phone.",
+      sub: "Every Monday you open a notebook, count cash, and call parents one by one. DugsiPAY ends that — 200 students, every payment, every reminder, on your phone.",
       desire: "One app, and this week's fees collect themselves — you just confirm.",
       cta1: "Explore the live demo",
       cta2: "See how it works",
@@ -65,8 +65,8 @@ export const COPY: Record<
       eyebrow: "The cost",
       headline: "The notebook is free. It just costs you $3,600 a year.",
       sub: "Time is money and forgotten fees are money — you're paying both. Here is the honest monthly math for an average school.",
-      withoutLabel: "Without DuqsiPay",
-      withLabel: "With DuqsiPay",
+      withoutLabel: "Without DugsiPAY",
+      withLabel: "With DugsiPAY",
       without: [
         "3 hours every Monday on manual fee work",
         "$200–$300 lost monthly in uncollected fees",
@@ -81,12 +81,12 @@ export const COPY: Record<
         "One tap opens a ready WhatsApp reminder to the right parent",
         "A monthly collection rate you can watch climb",
       ],
-      roi: "You lose ~$240/month in time and forgotten fees. DuqsiPay costs from $15. Net gain: ~$225/month.",
-      onePercent: "For every $1 you spend on DuqsiPay, you get back about $10 in collected fees and recovered time.",
+      roi: "You lose ~$240/month in time and forgotten fees. DugsiPAY costs from $15. Net gain: ~$225/month.",
+      onePercent: "For every $1 you spend on DugsiPAY, you get back about $10 in collected fees and recovered time.",
     },
     solution: {
       eyebrow: "The way out",
-      headline: "DuqsiPay — your fee office, in your pocket.",
+      headline: "DugsiPAY — your fee office, in your pocket.",
       sub: "A simple fee-management app built for private schools in Mogadishu, Hargeisa, Bosaso and Kismayo. For directors who want the numbers without the notebook.",
       values: [
         "Collect more: forgotten fees get remembered automatically.",
@@ -158,7 +158,7 @@ export const COPY: Record<
       reportsCaption: "Know your numbers. Every month.",
       items: [
         {
-          quote: "I used to lose track of who paid in October by November. Now I open DuqsiPay and see it in five seconds — and the reminder tap brought back about $250 we used to write off.",
+          quote: "I used to lose track of who paid in October by November. Now I open DugsiPAY and see it in five seconds — and the reminder tap brought back about $250 we used to write off.",
           name: "Mudane A., School Director",
           role: "Director, Mogadishu",
           badge: "Recovers ~$250/month",
@@ -180,14 +180,14 @@ export const COPY: Record<
     faq: {
       title: "Questions directors ask us",
       items: [
-        { q: "Does it work on my Android phone?", a: "Yes — DuqsiPay is built mobile-first for Android Chrome. It also works on any laptop or iPhone browser. Nothing to install, nothing to update." },
-        { q: "What if I'm not good with technology?", a: "If you can send a WhatsApp message, you can run DuqsiPay. And you won't set it up alone — we do your import and training over one WhatsApp call." },
-        { q: "We already use WhatsApp and Excel — why change?", a: "Keep WhatsApp — we just make it smarter. DuqsiPay fills the message for you and remembers who got it. Excel can't remind a parent, stop a dispute, or total your month." },
+        { q: "Does it work on my Android phone?", a: "Yes — DugsiPAY is built mobile-first for Android Chrome. It also works on any laptop or iPhone browser. Nothing to install, nothing to update." },
+        { q: "What if I'm not good with technology?", a: "If you can send a WhatsApp message, you can run DugsiPAY. And you won't set it up alone — we do your import and training over one WhatsApp call." },
+        { q: "We already use WhatsApp and Excel — why change?", a: "Keep WhatsApp — we just make it smarter. DugsiPAY fills the message for you and remembers who got it. Excel can't remind a parent, stop a dispute, or total your month." },
         { q: "Is my school's data safe?", a: "Your data lives in your own workspace — not shared with other schools. You can download a complete backup anytime with one click, and records with payment history can never be deleted by accident." },
         { q: "What if I want to cancel?", a: "Cancel anytime from one message to us — no contracts. You keep every record you exported, and we never hold your data hostage." },
         { q: "Do parents need to download anything?", a: "No. Parents receive receipts and reminders on the WhatsApp they already have. Nothing to install, nothing to learn." },
         { q: "Is there support in Somali?", a: "Yes — our onboarding and support team speaks Soomaali and English. Message us any working day and you'll talk to a person, not a bot." },
-        { q: "How is this better than hiring another admin?", a: "An admin costs $150–$250 a month and still makes mistakes in a notebook. DuqsiPay does their fee-tracking work for a tenth of that — and frees them for work that actually needs a human." },
+        { q: "How is this better than hiring another admin?", a: "An admin costs $150–$250 a month and still makes mistakes in a notebook. DugsiPAY does their fee-tracking work for a tenth of that — and frees them for work that actually needs a human." },
       ],
     },
     finalCta: {
@@ -206,21 +206,21 @@ export const COPY: Record<
         { title: "Support", links: ["WhatsApp support", "Setup help", "FAQ", "Try live demo"] },
       ],
       waLine: "Prefer to talk? WhatsApp us — we answer in Somali or English.",
-      copyright: "© {year} DuqsiPay — Mogadishu, Somalia",
+      copyright: "© {year} DugsiPAY — Mogadishu, Somalia",
       legal: ["Privacy", "Terms"],
     },
   },
   so: {
     nav: {
       tagline: "Lacagaha dugsi, si cad.",
-      links: ["Maxaa DuqsiPay", "Astaamaha", "Qiimaha", "Su'aalaha"],
+      links: ["Maxaa DugsiPAY", "Astaamaha", "Qiimaha", "Su'aalaha"],
       cta: "Bilow hadda",
-      menuTitle: "Liiska — DuqsiPay",
+      menuTitle: "Liiska — DugsiPAY",
     },
     hero: {
       eyebrow: "Loogu talagalay dugsiyada Soomaalida · Soomaali + English",
       title: "Ogow cida bixisay. Ciduna seegto. Hal riix.",
-      sub: "Isniin kasta buugaagta baad furtaa, lacag baad tirisaa, waalidkana mid mid baad u wacdaa. DuqsiPay wuu joojinayaa — 200 arday, lacag kasta, xasuusin kasta, taleefankaaga.",
+      sub: "Isniin kasta buugaagta baad furtaa, lacag baad tirisaa, waalidkana mid mid baad u wacdaa. DugsiPAY wuu joojinayaa — 200 arday, lacag kasta, xasuusin kasta, taleefankaaga.",
       desire: "Hal app, lacagtii usbuucana isu soo ururtaa — adigu waxaad xaqiijisaa oo keliya.",
       cta1: "Arag demo toos ah",
       cta2: "Eeg sida loo adeegsado",
@@ -250,8 +250,8 @@ export const COPY: Record<
       eyebrow: "Qiimaha",
       headline: "Buuggu waa bilaash. Laakiin wuxuu ku kacayaa $3,600 sanadkii.",
       sub: "Waqtigu waa lacag, lacagtii la iloobotuna waa lacag — labadaba waad bixinaysaa. Kani waa xisaabta runta ah ee bisha ee dugsiga caadiga ah.",
-      withoutLabel: "DuqsiPay la'aan",
-      withLabel: "DuqsiPay la haysto",
+      withoutLabel: "DugsiPAY la'aan",
+      withLabel: "DugsiPAY la haysto",
       without: [
         "3 saacadood Isniin kasta shaqo gacan",
         "$200–$300 luma bil kasta",
@@ -266,12 +266,12 @@ export const COPY: Record<
         "Hal riix xasuusin diyaar ah waalidka saxda ah",
         "Heerka ururinta bisha oo aad arki karto",
       ],
-      roi: "Waxaad luminaysaa ~$240 bil kasta waqti iyo lacago la iloobo. DuqsiPay wuxuu ka bilaabmaa $15. Faa'iidada saafiga ah: ~$225 bil kasta.",
-      onePercent: "$1 kasta oo aad DuqsiPay bixiso, waxaad heshaa qiyaastii $10 oo lacag soo la ceshaday iyo waqti la badbaadiyay.",
+      roi: "Waxaad luminaysaa ~$240 bil kasta waqti iyo lacago la iloobo. DugsiPAY wuxuu ka bilaabmaa $15. Faa'iidada saafiga ah: ~$225 bil kasta.",
+      onePercent: "$1 kasta oo aad DugsiPAY bixiso, waxaad heshaa qiyaastii $10 oo lacag soo la ceshaday iyo waqti la badbaadiyay.",
     },
     solution: {
       eyebrow: "Xalka",
-      headline: "DuqsiPay — xafiiskaaga lacagaha, jeebkaaga.",
+      headline: "DugsiPAY — xafiiskaaga lacagaha, jeebkaaga.",
       sub: "App fudud oo lagu maareeyo lacagaha dugsiga, loo dhisay dugsiyada gaarka ah ee Muqdisho, Hargeysa, Boosaaso iyo Kismaayo. Madaxda doonaysa tirada buug la'aan.",
       values: [
         "Soo ururi lacag badan: lacagtii la iloobay si toos ah loo xasuusanaa.",
@@ -365,14 +365,14 @@ export const COPY: Record<
     faq: {
       title: "Su'aalaha madaxdu noo weydiiyaan",
       items: [
-        { q: "Ma ku shaqeeyaa taleefankayga Android?", a: "Haa — DuqsiPay wuxuu u dhismaa Android Chrome marka hore. Wuxuu kaloo ku shaqeeyaa kombuyutar iyo iPhone browser. Wax aan la rakibin oo aan la cusboonaysiin." },
-        { q: "Maxaa dhacay haddii aanan tikniyoolajiyad aqoon?", a: "Haddii aad fariin WhatsApp diri karto, DuqsiPay waad maamuli kartaa. Dejintana kuma sameysid keligaa — dadaal iyo tababar WhatsApp hal wicitaan ayaan kaa sameynaa." },
-        { q: "Haddaba WhatsApp iyo Excel waan u isticmaalaa — maxaa isbeddelay?", a: "Hayso WhatsApp — waxaan u sameynaa ka caqli badan. DuqsiPay wuxuu buuxiyaa fariinta isagoo xusuusanaya cida loo diray. Excel kuma xusuusin karo waalid, kama joojin karo muran, kama tirin karo bishaada." },
+        { q: "Ma ku shaqeeyaa taleefankayga Android?", a: "Haa — DugsiPAY wuxuu u dhismaa Android Chrome marka hore. Wuxuu kaloo ku shaqeeyaa kombuyutar iyo iPhone browser. Wax aan la rakibin oo aan la cusboonaysiin." },
+        { q: "Maxaa dhacay haddii aanan tikniyoolajiyad aqoon?", a: "Haddii aad fariin WhatsApp diri karto, DugsiPAY waad maamuli kartaa. Dejintana kuma sameysid keligaa — dadaal iyo tababar WhatsApp hal wicitaan ayaan kaa sameynaa." },
+        { q: "Haddaba WhatsApp iyo Excel waan u isticmaalaa — maxaa isbeddelay?", a: "Hayso WhatsApp — waxaan u sameynaa ka caqli badan. DugsiPAY wuxuu buuxiyaa fariinta isagoo xusuusanaya cida loo diray. Excel kuma xusuusin karo waalid, kama joojin karo muran, kama tirin karo bishaada." },
         { q: "Xogta dugsigaygu ma ammaan miyaa?", a: "Xogtaadu waxay ku nooshahay meel kaa gaar ah — lama wadaago dugsiyo kale. Kayd buuxa hal guji kad soo dejisana waqti kasta, diiwaan lacago lehna weligiis si khalad ah looma tirtiro." },
         { q: "Maxaa dhacay haddii aan joojin rabo?", a: "Jooji waqti kasta hal fariin — qandaraas ma jiro. Wax kasta oo aad soo dejisatay waad heysataa, xogtaadana waligay ku qaban mayno." },
         { q: "Waalidiintu ma rakibanayaan wax cusub?", a: "Maya. Waalidiintu waxay ku heli doonaan rasiidh iyo xasuusin WhatsApp-kooda caadiga ah. Wax aan la rakibin, wax aan la baran." },
         { q: "Taageero Soomaali miyaa jirtaa?", a: "Haa — kooxdeenna dejinta iyo taageeradu waxay ku hadlaan Soomaali iyo English. Maalinta shaqo fariin noo dir, qof ayaad la hadli doontaa, bot-na ma aha." },
-        { q: "Ma ka wanaagsan tahay shaqaale kale oo la qofaysado?", a: "Shaqaaluhu wuxuu ku kacayaa $150–$250 bil kasta isagoo buuggana qalad ku sameeya. DuqsiPay wuxuu shaqaddaas kuu sameeyaa toban meher ka mid — isaguna wuu kuu xoraynayaa shaqo qof u baahan." },
+        { q: "Ma ka wanaagsan tahay shaqaale kale oo la qofaysado?", a: "Shaqaaluhu wuxuu ku kacayaa $150–$250 bil kasta isagoo buuggana qalad ku sameeya. DugsiPAY wuxuu shaqaddaas kuu sameeyaa toban meher ka mid — isaguna wuu kuu xoraynayaa shaqo qof u baahan." },
       ],
     },
     finalCta: {
@@ -391,7 +391,7 @@ export const COPY: Record<
         { title: "Taageero", links: ["WhatsApp taageero", "Caawimaad dejin", "Su'aalaha", "Tijaabi demo-ga"] },
       ],
       waLine: "Hadal ma jeceshahay? WhatsApp noo soo dir — Soomaali ama English ayaan kuu jawaabnaa.",
-      copyright: "© {year} DuqsiPay — Muqdisho, Soomaaliya",
+      copyright: "© {year} DugsiPAY — Muqdisho, Soomaaliya",
       legal: ["Qarsoodi", "Shuruud"],
     },
   },

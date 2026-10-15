@@ -92,7 +92,7 @@ function Brand({ schoolName, logoData }: { schoolName: string; logoData: string 
       )}
       <div className="min-w-0">
         <p className="truncate text-sm font-bold leading-tight text-slate-900">{schoolName}</p>
-        <p className="text-[11px] font-medium text-slate-400">DuqsiPay</p>
+        <p className="text-[11px] font-medium text-slate-400">DugsiPAY</p>
       </div>
     </Link>
   );

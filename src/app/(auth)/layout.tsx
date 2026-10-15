@@ -10,7 +10,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           <div className="grid size-10 place-items-center rounded-xl bg-white/10">
             <GraduationCap className="size-5" />
           </div>
-          <span className="text-lg font-bold tracking-tight">DuqsiPay</span>
+          <span className="text-lg font-bold tracking-tight">DugsiPAY</span>
         </Link>
         <div>
           <h2 className="max-w-md text-3xl font-semibold leading-[1.15] tracking-[-0.02em]">
@@ -43,7 +43,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             <div className="grid size-10 place-items-center rounded-xl bg-primary-800 text-white">
               <GraduationCap className="size-5" />
             </div>
-            <span className="text-lg font-bold tracking-tight text-slate-950">DuqsiPay</span>
+            <span className="text-lg font-bold tracking-tight text-slate-950">DugsiPAY</span>
           </Link>
           {children}
         </div>
