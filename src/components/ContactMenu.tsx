@@ -42,11 +42,15 @@ export default function ContactMenu({
       const r = btnRef.current.getBoundingClientRect();
       const menuH = 240;
       const menuW = 260;
-      const openUp = r.bottom + menuH + 8 > window.innerHeight;
-      setPos({
-        top: openUp ? Math.max(8, r.top - menuH - 8) : r.bottom + 8,
-        left: Math.max(8, Math.min(r.right - menuW, window.innerWidth - menuW - 8)),
-      });
+      if (typeof window !== "undefined") {
+        const openUp = r.bottom + menuH + 8 > window.innerHeight;
+        setPos({
+          top: openUp ? Math.max(8, r.top - menuH - 8) : r.bottom + 8,
+          left: Math.max(8, Math.min(r.right - menuW, window.innerWidth - menuW - 8)),
+        });
+      } else {
+        setPos({ top: 8, left: 8 });
+      }
     }
     setOpen((v) => !v);
   }
@@ -67,13 +71,17 @@ export default function ContactMenu({
     function onScroll() {
       setOpen(false);
     }
-    document.addEventListener("mousedown", onDoc);
-    document.addEventListener("keydown", onKey);
-    window.addEventListener("scroll", onScroll, true);
+    if (typeof window !== "undefined") {
+      document.addEventListener("mousedown", onDoc);
+      document.addEventListener("keydown", onKey);
+      window.addEventListener("scroll", onScroll, true);
+    }
     return () => {
-      document.removeEventListener("mousedown", onDoc);
-      document.removeEventListener("keydown", onKey);
-      window.removeEventListener("scroll", onScroll, true);
+      if (typeof window !== "undefined") {
+        document.removeEventListener("mousedown", onDoc);
+        document.removeEventListener("keydown", onKey);
+        window.removeEventListener("scroll", onScroll, true);
+      }
     };
   }, [open]);
 
@@ -87,7 +95,9 @@ export default function ContactMenu({
         setOpen(false);
       }, 900);
     } catch {
-      window.prompt("Copy the message:", message);
+      if (typeof window !== "undefined") {
+        window.prompt("Copy the message:", message);
+      }
     }
   }
 

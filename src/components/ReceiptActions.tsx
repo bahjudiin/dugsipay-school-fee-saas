@@ -14,13 +14,15 @@ export default function ReceiptActions() {
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Clipboard unavailable (e.g. insecure context) — select fallback silently.
-      window.prompt("Copy this link:", window.location.href);
+      if (typeof window !== "undefined") {
+        window.prompt("Copy this link:", window.location.href);
+      }
     }
   }
 
   return (
     <div className="no-print flex flex-wrap items-center gap-2">
-      <button type="button" onClick={() => window.print()} className={btnSecondary}>
+      <button type="button" onClick={() => { if (typeof window !== "undefined") window.print(); }} className={btnSecondary}>
         <Printer className="size-4" /> Print / Save PDF
       </button>
       <button

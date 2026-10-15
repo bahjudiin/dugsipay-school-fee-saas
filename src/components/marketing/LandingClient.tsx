@@ -50,14 +50,18 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 
 export default function LandingClient() {
   // Read plan from URL search params on initial render
-  const urlPlan = new URLSearchParams(window.location.search).get("plan");
+  const urlPlan = typeof window !== "undefined"
+    ? new URLSearchParams(window.location.search).get("plan")
+    : undefined;
   const plan =
     urlPlan === "monthly" || urlPlan === "annual" || urlPlan === "lifetime"
       ? (urlPlan as "monthly" | "annual" | "lifetime")
       : "annual";
 
   // Read lang from localStorage on initial render
-  const storedLang = window.localStorage.getItem("dp_lang");
+  const storedLang = typeof window !== "undefined"
+    ? window.localStorage.getItem("dp_lang")
+    : undefined;
   const lang: LandingLang = storedLang === "en" || storedLang === "so"
     ? (storedLang as LandingLang)
     : "en";
@@ -65,8 +69,10 @@ export default function LandingClient() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function switchLang() {
-    const next = localStorage.getItem("dp_lang") === "en" ? "so" : "en";
-    window.localStorage.setItem("dp_lang", next);
+    if (typeof window !== "undefined") {
+      const next = localStorage.getItem("dp_lang") === "en" ? "so" : "en";
+      window.localStorage.setItem("dp_lang", next);
+    }
   }
 
   const c = COPY[lang];

@@ -72,10 +72,12 @@ export default function SignupForm({ plan: planId = "annual" }: { plan?: string 
           className="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-700"
           value={plan.id}
           onChange={(e) => {
-            const url = new URL(window.location.href);
-            url.searchParams.set("plan", e.target.value);
-            url.hash = "signup";
-            window.location.assign(url.toString());
+            if (typeof window !== "undefined") {
+              const url = new URL(window.location.href);
+              url.searchParams.set("plan", e.target.value);
+              url.hash = "signup";
+              window.location.assign(url.toString());
+            }
           }}
         >
           <option value="monthly">Monthly</option>
