@@ -10,11 +10,9 @@ import {
   History,
   Layers,
   LayoutDashboard,
-  LogIn,
   LogOut,
   Menu,
   Settings as SettingsIcon,
-  UserPlus,
   Wallet,
   X,
 } from "lucide-react";
@@ -104,7 +102,7 @@ function UserFooter({ name, role, lang }: { name: string; role: string; lang: st
 
   if (role === "demo") {
     return (
-      <div className="space-y-2 rounded-xl border border-amber-200 bg-amber-50/70 p-3">
+      <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-3">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-xs font-bold text-amber-950">Demo Portal</p>
@@ -113,20 +111,6 @@ function UserFooter({ name, role, lang }: { name: string; role: string; lang: st
           <span className="rounded-full bg-amber-200 px-2 py-0.5 text-[9px] font-bold text-amber-900">
             Read-only
           </span>
-        </div>
-        <div className="grid grid-cols-2 gap-1.5 pt-1">
-          <Link
-            href="/login"
-            className="flex items-center justify-center gap-1 rounded-lg border border-slate-300 bg-white py-1.5 text-center text-xs font-bold text-slate-700 shadow-sm transition hover:bg-slate-100"
-          >
-            <LogIn className="size-3" /> Sign in
-          </Link>
-          <Link
-            href="/signup"
-            className="flex items-center justify-center gap-1 rounded-lg bg-primary-600 py-1.5 text-center text-xs font-bold text-white shadow-sm transition hover:bg-primary-500"
-          >
-            <UserPlus className="size-3" /> Sign up
-          </Link>
         </div>
       </div>
     );

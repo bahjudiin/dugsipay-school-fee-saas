@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { LogIn, UserPlus } from "lucide-react";
 import AppShell from "@/components/AppShell";
 import { getAuthUser } from "@/lib/auth";
 import { ensureDemoSampleData } from "@/lib/demo-seed";
@@ -33,20 +31,6 @@ export default async function AppLayout({
               <span className="font-bold">Live Demo Mode (Read-Only)</span> — You are exploring
               live sample school data. You can create your own private school workspace anytime.
             </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/login"
-              className="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-white px-3.5 py-1.5 text-xs font-bold text-amber-900 shadow-sm transition hover:bg-amber-100"
-            >
-              <LogIn className="size-3.5" /> Sign In
-            </Link>
-            <Link
-              href="/signup"
-              className="inline-flex items-center gap-1.5 rounded-full bg-primary-600 px-4 py-1.5 text-xs font-bold text-white shadow-sm transition hover:bg-primary-500"
-            >
-              <UserPlus className="size-3.5" /> Create Real Account
-            </Link>
           </div>
         </div>
       )}
