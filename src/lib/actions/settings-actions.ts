@@ -42,7 +42,7 @@ export async function updateSettings(
   if (Object.keys(fieldErrors).length)
     return { error: "Please fix the highlighted fields.", fieldErrors };
 
-  const finalCurrency = currency === "CUSTOM" ? customCurrency : currency;
+  const finalCurrency = currency === "CUSTOM" && customCurrency ? customCurrency : currency;
 
   try {
     await db.transaction(async (tx) => {

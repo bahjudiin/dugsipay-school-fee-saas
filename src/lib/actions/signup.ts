@@ -23,6 +23,7 @@ export async function submitSignup(
   const email = clamp(str(fd, "email"), 160);
   const studentCount = str(fd, "studentCount");
   const plan = clamp(str(fd, "plan"), 20);
+  if (!["monthly","annual","lifetime"].includes(plan)) return { error: "Invalid plan selected." };
   const message = clamp(str(fd, "message"), 500);
 
   const phone = normalizeSomaliPhone(rawPhone);

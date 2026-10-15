@@ -1,16 +1,27 @@
 /** Formatting helpers kept framework-free so they work on server and client. */
+const moneyCache = new Map<string, string>();
+const monthsElapsedCache = new Map<string, number>();
 
 export function money(amount: number | string, currency: string): string {
+  const key = `${amount}-${currency}`;
+  if (moneyCache.has(key)) return moneyCache.get(key)!;
   const n = typeof amount === "string" ? Number(amount) : amount;
-  if (!Number.isFinite(n)) return `—`;
+  if (!Number.isFinite(n)) {
+    moneyCache.set(key, `—`);
+    return `—`;
+  }
   try {
-    return new Intl.NumberFormat("en-US", {
+    const formatted = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: currency || "USD",
       maximumFractionDigits: Number.isInteger(n) ? 0 : 2,
     }).format(n);
+    moneyCache.set(key, formatted);
+    return formatted;
   } catch {
-    return `${currency} ${n.toFixed(2)}`;
+    const fallback = `${currency} ${n.toFixed(2)}`;
+    moneyCache.set(key, fallback);
+    return fallback;
   }
 }
 
@@ -69,13 +80,20 @@ export function currentYearMonth(): string {
 
 /** Whole months elapsed from a date up to now (inclusive of the start month). */
 export function monthsElapsed(from: Date | string): number {
-  const start = typeof from === "string" ? new Date(from) : from;
+  const start = typeof from === "string" ? new Date(from) : new Date(from);
+  // Align to the first of the month so the count is consistent when a student
+  // is enrolled on any day of a month – billing always starts at month boundaries.
+  const key = `${start.getFullYear()}-${start.getMonth()}`;
+  if (monthsElapsedCache.has(key)) return monthsElapsedCache.get(key)!;
+  const aligned = new Date(start.getFullYear(), start.getMonth(), 1);
   const now = new Date();
   const m =
-    (now.getFullYear() - start.getFullYear()) * 12 +
-    (now.getMonth() - start.getMonth()) +
+    (now.getFullYear() - aligned.getFullYear()) * 12 +
+    (now.getMonth() - aligned.getMonth()) +
     1;
-  return Math.max(1, m);
+  const result = Math.max(1, m);
+  monthsElapsedCache.set(key, result);
+  return result;
 }
 
 export const PAYMENT_METHODS = [
